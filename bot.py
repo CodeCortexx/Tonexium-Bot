@@ -5,10 +5,10 @@ from aiogram.utils import executor
 import requests
 
 # --- Konfigurationsbereich ---
-TELEGRAM_BOT_TOKEN = "8048781787:AAHEO8-c1wr_TY9daN3pXfMfTAaXQPas2mE"  # Von BotFather erhalten
+TELEGRAM_BOT_TOKEN = "8048781787:AAHEO8-c1wr_TY9daN3pXfMfTAaXQPas2mE"  # Dein Bot Token
 TON_API_BASE_URL = "https://toncenter.com/api/v2/"  # Beispiel-API-Endpunkt
 TON_API_KEY = "67830af0ba91d1d066a2585641eb7123192d5a4a3dcb16bc494b8a01b84c3c95"  # Dein TON API-Schlüssel
-CHANNEL_ID = "@Tonexium"  # Dein Telegram-Kanalname oder ID
+CHANNEL_ID = "@tonexiumchannel"  # Dein Telegram Kanal (öffentliche Kanal-ID)
 
 # Bot- und Dispatcher-Objekte erstellen
 bot = Bot(token=TELEGRAM_BOT_TOKEN)
