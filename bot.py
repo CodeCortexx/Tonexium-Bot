@@ -18,7 +18,7 @@ dp = Dispatcher(bot)
 def get_wallet_info(wallet_address):
     """Ruhe Wallet-Daten ab (z. B. Kontostand und Transaktionshistorie)"""
     try:
-        # Beispiel-API-Request für Wallet-Informationen
+        # API-Request für Wallet-Informationen
         response = requests.get(f"{TON_API_BASE_URL}getAddressInformation", 
                                 params={"address": wallet_address, "api_key": TON_API_KEY})
         response.raise_for_status()  # Überprüft auf HTTP-Fehler
@@ -48,7 +48,7 @@ def get_wallet_info(wallet_address):
 def get_block_info(block_id):
     """Ruhe Blockdaten ab (z. B. Blockhöhe, Zeitstempel, Status)"""
     try:
-        # Beispiel-API-Request für Blockdaten
+        # API-Request für Blockdaten
         response = requests.get(f"{TON_API_BASE_URL}getBlock", 
                                 params={"id": block_id, "api_key": TON_API_KEY})
         response.raise_for_status()  # Überprüft auf HTTP-Fehler
